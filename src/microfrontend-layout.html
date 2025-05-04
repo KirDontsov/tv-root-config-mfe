@@ -1,0 +1,27 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main style="width: 100%; height: 100svh; overflow-x: hidden; overflow-y: auto;">
+    <application name="@top-vybor/header-mfe"></application>
+    <application name="@top-vybor/sidebar-mfe"></application>
+    <route default>
+      <application name="@top-vybor/home-mfe"></application>
+    </route>
+  </main>
+</single-spa-router>
